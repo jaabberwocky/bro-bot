@@ -10,10 +10,21 @@ const bot = new TelegramBot(token, { polling: true });
 
 let coolCount = {};
 
-bot.onText(/\/count/, (msg, match) => {
+bot.onText(/\/count/, (msg) => {
   const chatId = msg.chat.id;
-  const matched = match[1];
   const reply = `Cool count: [${coolCount[chatId]}]`;
+  bot.sendMessage(chatId, reply);
+});
+
+bot.onText(/\/help/, (msg) => {
+  const chatId = msg.chat.id;
+  const reply = "Just talk to me and I'll respond to how cool you are!\n\n/count - show count of how cool you are\n/help - show help message"
+  bot.sendMessage(chatId, reply);
+});
+
+bot.onText(/\/start/, (msg) => {
+  const chatId = msg.chat.id;
+  const reply = "Just talk to me and I'll respond to how cool you are! Try saying 'hey dude'!\n\n/count - show count of how cool you are\n/help - show help message"
   bot.sendMessage(chatId, reply);
 });
 
