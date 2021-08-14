@@ -15,6 +15,10 @@ const getRandomReply = () => {
     "Absolutely a beast, bro!",
     "Slayin' it, mate!",
     "Right on, bruddah!",
+    "Killer, dude!",
+    "Howzit goin' dude!",
+    "That was incredibly epic, mate!",
+    "Totally smashin', bro!"
   ];
   function getRandomInt(min, max) {
     min = Math.ceil(min);
