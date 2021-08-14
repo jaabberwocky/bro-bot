@@ -19,6 +19,22 @@ describe("isCool", function () {
     it("should return true with presence of 'bro'", function () {
       assert.strictEqual(utils.isCool("hello bro"), true);
     });
+
+    it("should work with uppercase", function () {
+      assert.strictEqual(utils.isCool("HELLO BRO"), true);
+    });
+
+    it("should work with mixed case", function () {
+      assert.strictEqual(utils.isCool("HELLO bRo"), true);
+    });
+
+    it("should be false when empty string", function () {
+      assert.strictEqual(utils.isCool(""), false);
+    });
+
+    it("should be false when spaces only", function () {
+      assert.strictEqual(utils.isCool("   "), false);
+    });
   });
 });
 
