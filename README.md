@@ -12,7 +12,7 @@ Deployed on Heroku.
 
 ## How to develop
 
-1. Register for a bot token key with https//t.me/botfather
+1. Register for a bot token key with https://t.me/botfather
 2. Save token key into a `.env` file:
 `TELEGRAM_TOKEN=<token_key>`
 3. Run in development mode with `npm run dev`
