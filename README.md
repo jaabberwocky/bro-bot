@@ -6,4 +6,6 @@ Talk to it on Telegram: https://t.me/bro_me_bot
 
 The bot will respond to any incantations with "dude", "mate" or "bro".
 
+![Alt Text](doc/bro-bot-2.gif)
+
 Deployed on Heroku.
