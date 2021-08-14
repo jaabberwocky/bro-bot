@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "mocha",
+    "start": "npm run server",
     "dev": "nodemon src/index.js",
     "server": "node src/index.js"
   },
