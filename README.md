@@ -10,10 +10,14 @@ The bot will respond to any incantations with "dude", "mate" or "bro".
 
 Deployed on Heroku.
 
-## How to develop
+## How to run
 
 1. Register for a bot token key with https://t.me/botfather
 2. Save token key into a `.env` file:
 `TELEGRAM_TOKEN=<token_key>`
 3. Run in development mode with `npm run dev`
 4. Run tests with `npm test`
+
+## How to contribute
+
+Additional "bro", "dude" or "mate" phrases welcome in `getRandomReply()` in `src/utils.js`!
