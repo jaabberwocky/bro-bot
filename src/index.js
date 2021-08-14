@@ -24,7 +24,7 @@ bot.onText(/\/help/, (msg) => {
 
 bot.onText(/\/start/, (msg) => {
   const chatId = msg.chat.id;
-  const reply = "Just talk to me and I'll respond to how cool you are! Try saying 'hey dude'!\n\n/count - show count of how cool you are\n/help - show help message"
+  const reply = "Try saying 'hey dude'!"
   bot.sendMessage(chatId, reply);
 });
 
