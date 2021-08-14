@@ -4,7 +4,9 @@
   "description": "Telegram bot that simply replies to bro, dude or mate.",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js",
+    "server": "node src/index.js"
   },
   "author": "",
   "license": "ISC",
